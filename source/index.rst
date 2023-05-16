@@ -1,7 +1,7 @@
 The lodge
 =================================
 
-The lodge was still and silent; she made no sound, and within the room, as without in the forest, was the blackness of storm. Only now and then a flash of lightning showed a woman's silhouette at the desk ... developing and building disposable pentesting environments.
+The lodge was still and silent; she made no sound, and within the room, as without in the forest, was the blackness of storm. Only now and then a flash of lightning showed a woman's silhouette at the desk ... developing and building disposable environments.
 
 .. image:: _static/images/in-progress.png
   :alt: Forever in progress ...
