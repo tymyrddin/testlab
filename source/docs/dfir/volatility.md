@@ -1,5 +1,7 @@
 # Volatility
 
+[Volatility](https:/github.com/volatilityfoundation) is able to read suspended states of virtual machines. The advantage of such tools is that malware, such as rootkits, that try to hide themselves from user domains can be extracted using memory forensic tools.
+
 ## Memory extraction
 
 Extracting a memory dump can be done in several ways, depending on the requirements of the investigation:

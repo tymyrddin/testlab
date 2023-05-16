@@ -200,16 +200,6 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Software forensic tools
-
-   docs/sft/README.md
-   docs/sft/dff.md
-   docs/sft/volatility.md
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :includehidden:
    :caption: Exploitation tools
 
    docs/exploitation/README.md
@@ -383,12 +373,12 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    :includehidden:
    :caption: Vulnerability management
 
-   docs/mngmnt/README.md
-   docs/mngmnt/nessus.md
-   docs/mngmnt/mitre.md
-   docs/mngmnt/yara.md
-   docs/mngmnt/openvas.md
-   docs/mngmnt/misp.md
+   docs/tvm/README.md
+   docs/tvm/nessus.md
+   docs/tvm/mitre.md
+   docs/tvm/yara.md
+   docs/tvm/openvas.md
+   docs/tvm/misp.md
 
 .. toctree::
    :glob:
