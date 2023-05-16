@@ -1,0 +1,3 @@
+# BeEF
+
+[BeEF](https://beefproject.com/) is an exploitation tool for client-side attacks (like XSS and session hijacking) against web browsers. It can be used in web-based social engineering attacks by generating and injecting JavaScript hooks into web content that allow for interacting with the target browser via a console provided by the BeEF tool. This can be used to gain footholds on a hooked target, steal credentials, and execute other attacks within the context of the browser.
