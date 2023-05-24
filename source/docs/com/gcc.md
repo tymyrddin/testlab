@@ -13,3 +13,7 @@ Check with:
 CentOS, Fedora, and Red Hat:
 
     sudo dnf group install "Development Tools"
+
+To compile and execute 32-bit programs on 64-bit Kali Linux, install `gcc-multilib` (cross-compilING 32-bit binaries):
+
+    sudo apt update && sudo apt install gcc-multilib

@@ -3,6 +3,7 @@
 The explosion of endpoints and escalation of attacks in general, has made DFIR a central capability within security strategies and threat hunting capabilities. These are some tools for digital forensics and incident response.
 
 * [First responder toolkit](1st-responder.md)
+* [Acquisition tools](imaging.md)
 * [Commercial tools](commercial.md)
 * [RedLine](redline.md)
 * [Guymager](guymager.md)
