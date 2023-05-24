@@ -4,6 +4,7 @@ The explosion of endpoints and escalation of attacks in general, has made DFIR a
 
 * [First responder toolkit](1st-responder.md)
 * [Acquisition tools](imaging.md)
+* [Carving tools](carving.md)
 * [Commercial tools](commercial.md)
 * [RedLine](redline.md)
 * [Guymager](guymager.md)
