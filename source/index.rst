@@ -437,6 +437,7 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/dfir/bmc-tools.md
    docs/dfir/gct.md
    docs/dfir/libbde.md
+   docs/dfir/linux.md
 
 .. toctree::
    :glob:
