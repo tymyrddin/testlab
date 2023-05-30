@@ -423,6 +423,7 @@ The lodge was still and silent; she made no sound, and within the room, as witho
 
    docs/dfir/README.md
    docs/dfir/1st-responder.md
+   docs/dfir/trails.md
    docs/dfir/imaging.md
    docs/dfir/carving.md
    docs/dfir/commercial.md
