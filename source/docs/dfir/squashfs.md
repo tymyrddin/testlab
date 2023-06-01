@@ -6,7 +6,7 @@ The technique described here uses SquashFS as a forensic evidence container toge
 
 ## Loop devices
 
-The basis for many methods is the Linux loop device, a pseudo device that can be associated with a regular file, making the file accessible as a block device in `/dev`.
+The basis for many acquisition methods is the Linux loop device, a pseudo device that can be associated with a regular file, making the file accessible as a block device in `/dev`.
 
 While being a virtual file system, there are endless possibilities; here are some widely known use cases of loop devices:
 
@@ -15,15 +15,15 @@ While being a virtual file system, there are endless possibilities; here are som
 * Provides permanent segregation of data.
 * It can be used for sandboxed applications that contain all the necessary dependencies.
 
-If you are an Ubuntu user, then you’ll have a long list of loop devices, because of snaps, the universal package management system developed by Canonical. The snap applications are mounted as loop devices.
+Ubuntu usually has a long list of loop devices because of snaps, the universal package management system developed by Canonical. Snap applications are mounted as loop devices.
 
-If not that, Linux systems typically create eight loop devices by default, which might not be enough for a forensic acquisition host, but this number can be increased on boot up. To create 32 loop devices during boot up, add `max_loop=32` to the `GRUB_CMDLINE_LINUX_DEFAULT=` line in the `/etc/default/grub` file:
+Otherwise, Linux systems typically create eight loop devices by default, which might not be enough for a forensic acquisition host, but this number can be increased on boot up. To create 32 loop devices during boot up, add `max_loop=32` to the `GRUB_CMDLINE_LINUX_DEFAULT=` line in the `/etc/default/grub` file:
 
 ```shell
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash max_loop=32"
 ```
 
-After reboot, 32 unused loop devices should be available. The `sfsimage` script uses loop devices to mount SquashFS forensic evidence containers.
+After reboot, 32 unused loop devices should be available. The sfsimage script uses loop devices to mount SquashFS forensic evidence containers.
 
 ## SquashFS
 
