@@ -4,7 +4,8 @@ The explosion of endpoints and escalation of attacks in general, has made DFIR a
 
 * [First responder toolkit](1st-responder.md)
 * [Audit trail tools](trails.md)
-* [Acquisition tools](imaging.md)
+* [SquashFS and fsfimage](squashfs.md)
+* [Imaging tools](imaging.md)
 * [Carving tools](carving.md)
 * [Commercial tools](commercial.md)
 * [RedLine](redline.md)
