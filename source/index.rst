@@ -322,6 +322,7 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/mobile/spooftooph.md
    docs/mobile/drozer.md
    docs/mobile/android-sdk.md
+   docs/mobile/adb.md
    docs/mobile/frida.md
    docs/mobile/objection.md
 

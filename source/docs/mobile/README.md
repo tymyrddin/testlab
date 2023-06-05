@@ -14,6 +14,7 @@ Simulating hacker-style attacks on mobile devices.
 * [Spooftooph](spooftooph.md)
 * [Drozer](drozer.md)
 * [Android SDK](android-sdk.md)
+* [Android Debug Bridge (ADB)](adb.md)
 * [Frida](frida.md)
 * [Objection](objection.md)
 

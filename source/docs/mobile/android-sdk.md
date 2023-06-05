@@ -47,3 +47,5 @@ nina@tardis:/usr/local/android-studio/bin$ ./studio.sh
 7. After downloading the components, the wizards starts up Android Studio:
 
 ![Android studio](../../_static/images/android-studio5.png)
+
+8. [Start the emulator from the command line](https://developer.android.com/studio/run/emulator-commandline)
