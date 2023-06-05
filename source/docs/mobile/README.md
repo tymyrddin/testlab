@@ -2,11 +2,11 @@
 
 ## What?
 
-Notes on tools used to hack mobile devices.
+Notes on tools.
 
 ## Why?
 
-Simulating hacker-style attacks on mobile devices.
+Simulating hacker-style attacks and/or doing forensics on mobile devices.
 
 ## How?
 
