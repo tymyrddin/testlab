@@ -272,9 +272,9 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    :caption: Additional hardware
 
    docs/hardware/README.md
-   docs/hardware/usb.md
+   docs/hardware/hid.md
+   docs/hardware/wifi-adapters.md
    docs/hardware/network.md
-   docs/hardware/wireless.md
 
 .. toctree::
    :glob:

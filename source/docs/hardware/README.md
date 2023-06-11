@@ -10,9 +10,9 @@ Identify vulnerabilities and weaknesses in physical security controls.
 
 ## How?
 
-* [USB sticks](usb.md)
+* [Human interface devices](hid.md)
+* [Wireless adapters for Kali](wifi-adapters.md)
 * [Mischievous network hardware](network.md)
-* [Wireless adapters for monitoring](wireless.md)
 
 
 

@@ -1,4 +1,5 @@
 # Mischievous network hardware
 
 * [LAN Turtle](https://shop.hak5.org/products/lan-turtle)
-* [O.MG](https://shop.hak5.org/collections/mischief-gadgets/products/omg-adapter?variant=39914370334833)
+* [HAK5 WIFI pineapple](https://shop.hak5.org/products/wifi-pineapple) 
+* [MK7AC WiFi Adapter](https://shop.hak5.org/products/mk7ac-wifi-adapter)
