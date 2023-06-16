@@ -19,6 +19,7 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/vm/kali.md
    docs/vm/windows.md
    docs/vm/caine.md
+   docs/vm/ba.md
 
 .. toctree::
    :glob:

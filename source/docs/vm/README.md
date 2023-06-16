@@ -19,3 +19,4 @@ Build virtual local testlabs using open source tools.
 * [Kali VM](kali.md)
 * [Windows VM](windows.md)
 * [Caine VM](caine.md)
+* [Binary analysis](ba.md)
