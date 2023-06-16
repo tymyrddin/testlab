@@ -2,7 +2,9 @@
 
 The [Binary Analysis book](https://practicalbinaryanalysis.com/) comes with a virtual machine that contains all the examples and software, making it possible to enjoy the challenge safely.
 
-You can download it from [this torrent](https://tinyurl.com/ba-magnet) (or get link to it from the book site, I had to make a tinyurl to make a magnet link possible in markdown). The username and password for the VM are both "binary". [Why not VirtualBox](https://www.reddit.com/r/vmware/comments/rqxasq/why_not_virtual_box/). I have other KVM VM's as well, and running both KVM and VirtualBox in parallel leads to failures. 
+You can download it from [this torrent](https://tinyurl.com/ba-magnet) (or get link to it from the book site, I had to make a tinyurl to make a magnet link possible in markdown). The username and password for the VM are both "binary". 
+
+[Why not VirtualBox?](https://www.reddit.com/r/vmware/comments/rqxasq/why_not_virtual_box/). I have other KVM VM's as well, and running both KVM and VirtualBox in parallel leads to failures. 
 
 ## Installation on KVM
 
