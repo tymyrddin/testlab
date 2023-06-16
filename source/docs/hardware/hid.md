@@ -12,7 +12,7 @@ Flipper Zero is a portable Tamagotchi-like multi-functional device (hand-held di
 
 [Teensy](https://www.pjrc.com/teensy/) is like a rubber ducky, but cheaper. It hides as a keyboard. 
 
-The [O.MG cable]((https://shop.hak5.org/collections/mischief-gadgets/products/omg-adapter?variant=39914370334833)) from [MG](https://mg.lol/blog/omg-cable/) hides a backdoor inside the shell of a USB connector. Plug this cable into a computer it’ll be the victim of remote attacks over WiFi. In essence, a BadUSB device that can be remotely controlled.
+The [O.MG cable](https://shop.hak5.org/collections/mischief-gadgets/products/omg-adapter?variant=39914370334833) from [MG](https://mg.lol/blog/omg-cable/) hides a backdoor inside the shell of a USB connector. Plug this cable into a computer it’ll be the victim of remote attacks over WiFi. In essence, a BadUSB device that can be remotely controlled.
 
 Next up is a USB-C dock: take a stock dock, find a Raspberry Pi Zero W and wire it up to a USB 2.0 port tapped somewhere inside the dock, and flash the SD card with a [payload image](https://github.com/RoganDawes/P4wnP1_aloa). Finding a Pi Zero is the hardest part.
 
