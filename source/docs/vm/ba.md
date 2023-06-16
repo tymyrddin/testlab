@@ -1,6 +1,6 @@
 # Binary analysis VM
 
-The [Binary Analysis book](https://practicalbinaryanalysis.com/) comes with a virtual machine that contains all the examples and software, making it possible to enjoy the challenge safely. After an introduction to the whole compilation process, a detailed walk-through of the ELF format, a primer on the PE Windows format, and on how to write your binary tools with `libbfd` and a step-by-step introduction to the first level of a CTF, we're on our way to tackling the next levels of the CTF.
+The [Binary Analysis book](https://practicalbinaryanalysis.com/) comes with a virtual machine that contains all the examples and software, making it possible to enjoy the challenge safely.
 
 You can download it from [this torrent](https://tinyurl.com/ba-magnet) (or get link to it from the book site, I had to make a tinyurl to make a magnet link possible in markdown). The username and password for the VM are both "binary". [Why not VirtualBox](https://www.reddit.com/r/vmware/comments/rqxasq/why_not_virtual_box/). I have other KVM VM's as well, and running both KVM and VirtualBox in parallel leads to failures. 
 
