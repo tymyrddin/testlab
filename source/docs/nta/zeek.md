@@ -23,11 +23,9 @@ There are some overlapping functionalities, but they are different in purpose.
 
 ## Zeek architecture
 
-| ![Zeek](../../_static/images/zeek-arch.png)
-|:--:|
-| Zeek has two primary layers: an `Event Engine` and a `Policy Script Interpreter`.  |
+![Zeek](../../_static/images/zeek-arch.png)
 
-The Event Engine layer is where the packets are processed; it is called the event core and is responsible for 
+Zeek has two primary layers: an `Event Engine` and a `Policy Script Interpreter`. The Event Engine layer is where the packets are processed; it is called the event core and is responsible for 
 describing the event without focusing on event details. It is where the packages are divided into parts such as source 
 and destination addresses, protocol identification, session analysis and file extraction. The Policy Script Interpreter 
 layer is where the semantic analysis is conducted. It is responsible for describing the event correlations by using 

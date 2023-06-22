@@ -25,9 +25,9 @@ database of the C&C servers that security analysts can search through and invest
 they have come across. Additionally, they provide various IP and IOC blocklists and mitigation information to be 
 used to prevent botnet infections.
 
-| ![FeodoTracker](../../_static/images/feodotracker.png)
-|:--:|
-| Georgia is the country associated with botnet IP address 178.134.47.166. |
+![FeodoTracker](../../_static/images/feodotracker.png)
+
+Georgia is the country associated with botnet IP address 178.134.47.166. |
 
 ## SSL Blacklist
 
@@ -39,7 +39,7 @@ on the TCP layer.
 You can browse through the SSL certificates and JA3 fingerprints lists or download them to add to your deny list 
 or threat hunting rulesets.
 
-| ![SSL Blacklist](../../_static/images/ssl-blacklist.png)
+| ![SSL Blacklist](../../_static/images/ssl-blacklist.png) |
 |:--:|
 | Dridex is associated with the JA3 Fingerprint 51c64c77e60f3980eea90869b68c58a8 on SSL Blacklist. |
 
@@ -52,7 +52,7 @@ validate your investigations.
 The tool also provides feeds associated with country, AS number and Top Level Domain that an analyst can generate 
 based on specific search needs.
 
-| ![URLHaus](../../_static/images/urlhaus.png)
+| ![URLHaus](../../_static/images/urlhaus.png) |
 |:--:|
 | DIGITALOCEAN-ASN has the ASN number AS14061. |
 
@@ -62,6 +62,6 @@ With ThreatFox, security analysts can search for, share and export indicators of
 IOCs can be exported in various formats such as MISP events, Suricata IDS Ruleset, Domain Host files, DNS Response 
 Policy Zone, JSON files and CSV files.
 
-| ![ThreatFox](../../_static/images/threatfox.png)
+| ![ThreatFox](../../_static/images/threatfox.png) |
 |:--:|
 | The IOC 212.192.246.30:5555 is linked to Mirai (alias Katana). |

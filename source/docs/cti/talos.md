@@ -19,20 +19,20 @@ More information about Cisco Talos can be found on their
 
 ## Scenario 1
 
-| ![Talos](../../_static/images/talos-hash.png)
+| ![Talos](../../_static/images/talos-hash.png) |
 |:--:|
 | Enter the attachment SHA256 hash found with [phishtool](phishtool.md) of Email2.eml. |
 
-| ![Talos](../../_static/images/talos-hash2.png)
+| ![Talos](../../_static/images/talos-hash2.png) |
 |:--:|
 | A bit of song and dance. |
 
-| ![Talos](../../_static/images/talos-hash3.png)
+| ![Talos](../../_static/images/talos-hash3.png) |
 |:--:|
 | And results. |
 
 ## Scenario 2
 
-| ![Talos](../../_static/images/talos-hash4.png)
+| ![Talos](../../_static/images/talos-hash4.png) |
 |:--:|
 | And results. |

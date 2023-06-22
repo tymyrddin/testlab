@@ -2,9 +2,9 @@
 
 ## Components
 
-| ![Elastic stack](../../_static/images/elk1.png)
-|:--:|
-| A collection of different open source components linked together to help users take the data from <br>any source and in any format and perform a search, analyze and visualize the data in real-time. |
+![Elastic stack](../../_static/images/elk1.png)
+
+A collection of different open source components linked together to help users take the data from <br>any source and in any format and perform a search, analyze and visualize the data in real-time:
 
 * Elasticsearch is a full-text search and analytics engine used to store JSON-formatted documents. Elasticsearch 
 is a component used to store, analyze, perform correlation on the data, etc. Elasticsearch supports RESTFul API to 
@@ -18,9 +18,7 @@ data stream in real-time. It allows users to create multiple visualizations and 
 
 ## Data flow
 
-| ![Elastic stack](../../_static/images/elk2.png)
-|:--:|
-| How they work together. |
+![Elastic stack](../../_static/images/elk2.png)
 
 * Beats is a set of different data shipping agents used to collect data from multiple agents. Like Winlogbeat is used to collect windows event logs, Packetbeat collects network traffic flows.
 * Logstash collects data from beats, ports or files, etc., parses/normalizes it into field value pairs, and stores them into elasticsearch.

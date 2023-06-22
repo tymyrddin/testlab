@@ -25,13 +25,13 @@ Additionally, reports can be generated to provide a forensic record that can be 
 
 Download the task files for analysis, and upload to phishtool:
 
-| ![Phishtool](../../_static/images/phishtool.png)
+| ![Phishtool](../../_static/images/phishtool.png) |
 |:--:|
 | The recipient's email address of Email2.eml. |
 
 Check the attachments tab:
 
-| ![Phishtool](../../_static/images/phishtool-gethash.png)
+| ![Phishtool](../../_static/images/phishtool-gethash.png) |
 |:--:|
 | Copy the attachment SHA256 hash (enter in [Talos](talos.md)). |
 
@@ -39,7 +39,7 @@ Check the attachments tab:
 
 Download the task files for analysis, and upload to phishtool:
 
-| ![Phishtool](../../_static/images/phishtool-email3.png)
+| ![Phishtool](../../_static/images/phishtool-email3.png) |
 |:--:|
 | Get name of attachment and copy the SHA256 hash (enter in [Talos](talos.md)). |
 

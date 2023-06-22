@@ -9,11 +9,11 @@ requested from the domains, a snapshot of the web page, technologies used and ot
 The site provides two views, the first one showing the most recent scans performed and the second one showing 
 current live scans.
 
-| ![Scan of tryhackme.com](../../_static/images/urlscan-tryhackme.png)
+| ![Scan of tryhackme.com](../../_static/images/urlscan-tryhackme.png) |
 |:--:|
 | Summary page and tabs with more interesting information. |
 
 * The Cisco Umbrella rank of the primary domain is (at the time of writing) _222829_. 
 * This website contacted 17 IPs in 3 countries across _14 domains_ to perform 119 HTTP transactions.
-* Domain registrar: _NAMECHEAP INC_
-* The main IP is _2606:4700:10::ac43:1b0a_ (IPv6)
+* Domain registrar: `NAMECHEAP INC`
+* The main IP is `2606:4700:10::ac43:1b0a` (IPv6)

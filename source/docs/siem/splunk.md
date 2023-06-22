@@ -30,9 +30,7 @@ Search head also provides the ability to transform the results into presentable 
 
 When you access Splunk, you will see the default home screen:
 
-| ![Splunk Home](../../_static/images/splunk2.png)
-|:--:|
-| The top panel is the Splunk Bar |
+![Splunk Home](../../_static/images/splunk2.png)
 
 In the Splunk Bar, you can see system-level messages (Messages), configure the Splunk instance (Settings), review the progress of jobs (Activity), miscellaneous information such as tutorials (Help), and a search feature (Find).  
 
