@@ -382,6 +382,7 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/tvm/yara.md
    docs/tvm/openvas.md
    docs/tvm/misp.md
+   docs/tvm/socprime.md
 
 .. toctree::
    :glob:

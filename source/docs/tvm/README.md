@@ -7,3 +7,4 @@ Tools for identifying and using available security knowledge to mitigate and man
 * [YARA](yara.md)
 * [OpenVAS](openvas.md)
 * [MISP](misp.md)
+* [SOC Prime](socprime.md)
