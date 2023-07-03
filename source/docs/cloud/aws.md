@@ -1,5 +1,7 @@
 # AWS tools
 
+[AWS CLI](https://aws.amazon.com/cli/) can be installed on Windows (64 bit), Linux (both x86 and ARM processors), macOS, and inside a Docker container.
+
 * [AWS Inspector](https://aws.amazon.com/inspector/): A customized security solution for AWS which can be used as a basic minimum or preliminary testing tool.
 * [AWSGoat](https://github.com/ine-labs/AWSGoat): A vulnerable by design infrastructure on AWS featuring the latest released OWASP Top 10 web application security risks (2021) and other misconfiguration based on services such as IAM, S3, API Gateway, Lambda, EC2, and ECS. 
 * [CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat): Stand up vulnerable AWS resources as a target for PACU.

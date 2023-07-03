@@ -6,7 +6,7 @@ Notes on tools used for security testing cloud applications, and experimenting w
 
 ## Why?
 
-Assess the strength of the security controls in place.
+Put and assess the strength of the security controls in place.
 
 ## How?
 
