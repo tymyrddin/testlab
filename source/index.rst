@@ -17,8 +17,9 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/vm/README.md
    docs/vm/kvm-ubuntu.md
    docs/vm/kali.md
-   docs/vm/windows.md
+   docs/vm/sift-remnux.md
    docs/vm/caine.md
+   docs/vm/windows.md
    docs/vm/ba.md
 
 .. toctree::

@@ -17,6 +17,7 @@ Build virtual local testlabs using open source tools.
 
 * [KVM on Ubuntu](kvm-ubuntu.md)
 * [Kali VM](kali.md)
-* [Windows VM](windows.md)
+* [SIFT with REMnux](sift-remnux.md)
 * [Caine VM](caine.md)
+* [Windows VM](windows.md)
 * [Binary analysis](ba.md)
