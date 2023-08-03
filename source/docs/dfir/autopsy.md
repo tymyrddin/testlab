@@ -2,9 +2,11 @@
 
 Autopsy is an open-source and powerful digital forensics platform. Several features within Autopsy have been developed by the Department of Homeland Security Science and Technology funding. 
 
-Both SIFT and Kali have 2.24 by default installed. And that was not good enough for some of the more current challenges. Installing 4.20 at the time of writing resulted in a dead GUI, to do with encapsulating Java runtime internals in Java 17. But I'll post my notes on installing it, because in the future that may be solved.
+Both SIFT and Kali have 2.24 by default installed. And that was not good enough for some of the more current challenges. Installing 4.20 at the time of writing resulted in a dead GUI, to do with encapsulating Java runtime internals in Java 17. 
 
-Looking forward, I see the same SEVERE UI error reported for Java 18 for several applications already using it. So, I may do it all again, but now with the latest version of autopsy and sleuthkit running Java 16.
+Looking forward, I see the same SEVERE UI error reported for Java 18 for several applications which are already using it. And using JDK 16 will not be trivial. The only release available in Debian 10 is OpenJDK 11. Debian 11 has OpenJDK 17. Both of these are releases with long-term support. I'd have to get 16-jdk and 16-jre from BellSoft.
+
+But I'll post my notes on installing Autopsy 4.20 on JDK 17, because in the future the GUI problem may be solved, and then these notes become useful.
 
 ## Installing autopsy 4.20
 
@@ -24,7 +26,7 @@ The following packages will be REMOVED:
 ...
 ```
 
-Run [linux_macos_install_scripts/install_prereqs_ubuntu.sh](https://github.com/sleuthkit/autopsy/blob/develop/linux_macos_install_scripts/install_prereqs_ubuntu.sh):
+Run [install_prereqs_ubuntu.sh](https://github.com/sleuthkit/autopsy/blob/develop/linux_macos_install_scripts/install_prereqs_ubuntu.sh):
 
 ```text                                                                               
 ┌──(kali㉿kali-blue)-[~/Downloads]
@@ -125,7 +127,6 @@ zsh: permission denied: ./unix_setup.sh
                                                                                 
 ┌──(kali㉿kali-blue)-[/tmp/autopsy-4.20.0]
 └─$ chmod +x unix_setup.sh
-
                                                  
 ┌──(kali㉿kali-blue)-[/tmp/autopsy-4.20.0]
 └─$ ./unix_setup.sh 
