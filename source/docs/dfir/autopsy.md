@@ -1,12 +1,242 @@
-# Autopsy
+# Autopsy on Kali
 
 Autopsy is an open-source and powerful digital forensics platform. Several features within Autopsy have been developed by the Department of Homeland Security Science and Technology funding. 
 
-Both SIFT and Kali have 2.24 by default installed. And that was not good enough for some of the more current challenges. Installing 4.20 at the time of writing resulted in a dead GUI, to do with encapsulating Java runtime internals in Java 17. 
+Both SIFT and Kali have 2.24 by default installed. And that was not good enough for some of the more current challenges. Installing 4.20 at the time of writing resulted in a dead GUI, to do with encapsulating Java runtime internals in Java 17. Looking forward, I see the same SEVERE UI error reported for Java 18 for several applications which are already using it. And using JDK 16 will not be trivial. The only release available in Debian 10 is OpenJDK 11. Debian 11 has OpenJDK 17. Both of these are releases with long-term support. 
 
-Looking forward, I see the same SEVERE UI error reported for Java 18 for several applications which are already using it. And using JDK 16 will not be trivial. The only release available in Debian 10 is OpenJDK 11. Debian 11 has OpenJDK 17. Both of these are releases with long-term support. I'd have to get 16-jdk and 16-jre from BellSoft.
+So I tried for OpenJDK 11, autopsy-4.17.0 and sleuthkit-java_4.10.2-1_amd64.deb. That works. And posted my notes on installing Autopsy 4.20 on JDK 17 below it, because in the future the GUI problem may be solved, and then these notes become useful.
 
-But I'll post my notes on installing Autopsy 4.20 on JDK 17, because in the future the GUI problem may be solved, and then these notes become useful.
+## Installing Autopsy 4.17
+
+### Prerequisites
+
+Run [install_prereqs_ubuntu.sh](https://github.com/sleuthkit/autopsy/blob/develop/linux_macos_install_scripts/install_prereqs_ubuntu.sh) and add:
+
+```text
+┌──(kali㉿kali-blue)-[~]
+└─$ sudo apt -y install openjdk-11-jdk openjdk-11-jre
+[sudo] password for kali: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  openjdk-11-jdk-headless openjdk-11-jre-headless
+...
+Setting up openjdk-11-jdk-headless:amd64 (11.0.20~7-1) ...
+update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmic to provid
+e /usr/bin/rmic (rmic) in auto mode
+update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jaotc to provi
+de /usr/bin/jaotc (jaotc) in auto mode
+Setting up openjdk-11-jre:amd64 (11.0.20~7-1) ...
+Setting up openjdk-11-jdk:amd64 (11.0.20~7-1) ...
+                                                                                
+┌──(kali㉿kali-blue)-[~]
+└─$ sudo update-alternatives --config java
+There are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                         Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-17-openjdk-amd64/bin/java   1711      auto mode
+  1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java   1111      manual mode
+  2            /usr/lib/jvm/java-17-openjdk-amd64/bin/java   1711      manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 1
+update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/java to provide /usr/bin/java (java) in manual mode
+                                                                                                                                            
+┌──(kali㉿kali-blue)-[~]
+└─$ java -version
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+openjdk version "11.0.20-ea" 2023-07-18
+OpenJDK Runtime Environment (build 11.0.20-ea+7-post-Debian-1)
+OpenJDK 64-Bit Server VM (build 11.0.20-ea+7-post-Debian-1, mixed mode, sharing)
+```
+
+### Remove conflicting sleuthkit
+
+```text
+┌──(kali㉿kali-blue)-[~]
+└─$ cd Downloads 
+                                                                                                                                   
+┌──(kali㉿kali-blue)-[~/Downloads]
+└─$ sudo apt remove --auto-remove sleuthkit -y
+[sudo] password for kali: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages will be REMOVED:
+  kali-linux-headless libtsk19 sleuthkit
+...
+```
+
+### Install sleuthkit
+
+```text
+┌──(kali㉿kali-blue)-[~/Downloads]
+└─$ wget -O /tmp/sleuthkit-java_4.10.2-1_amd64.deb https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-4.10.2/sleuthkit-java_4.10.2-1_amd64.deb
+--2023-08-03 11:20:10--  https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-4.10.2/sleuthkit-java_4.10.2-1_amd64.deb
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/2562873/18b1bc80-8ba8-11eb-83c5-19c343833937?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230803T102010Z&X-Amz-Expires=300&X-Amz-Signature=2190994dc759f71e008df9dbc3a586e241beb0fb063481f2408ed38f6238d7d7&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=2562873&response-content-disposition=attachment%3B%20filename%3Dsleuthkit-java_4.10.2-1_amd64.deb&response-content-type=application%2Foctet-stream [following]
+--2023-08-03 11:20:10--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/2562873/18b1bc80-8ba8-11eb-83c5-19c343833937?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230803T102010Z&X-Amz-Expires=300&X-Amz-Signature=2190994dc759f71e008df9dbc3a586e241beb0fb063481f2408ed38f6238d7d7&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=2562873&response-content-disposition=attachment%3B%20filename%3Dsleuthkit-java_4.10.2-1_amd64.deb&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.111.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8560088 (8.2M) [application/octet-stream]
+Saving to: ‘/tmp/sleuthkit-java_4.10.2-1_amd64.deb’
+
+/tmp/sleuthkit-java_4.10.2-1_amd64.deb 100%[=========================================================================>]   8.16M  7.54MB/s    in 1.1s 
+
+2023-08-03 11:20:12 (7.54 MB/s) - ‘/tmp/sleuthkit-java_4.10.2-1_amd64.deb’ saved [8560088/8560088]
+                                                                                                                                             
+┌──(kali㉿kali-blue)-[~/Downloads]
+└─$ sudo apt install /tmp/./sleuthkit-java_4.10.2-1_amd64.deb
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Note, selecting 'sleuthkit-java' instead of '/tmp/./sleuthkit-java_4.10.2-1_amd64.deb'
+The following additional packages will be installed:
+  libc3p0-java libsqlite3-dev
+Suggested packages:
+  liblog4j1.2-java sqlite3-doc
+The following NEW packages will be installed:
+  libc3p0-java libsqlite3-dev sleuthkit-java
+...
+```
+
+### Download and unzip autopsy
+
+```text
+┌──(kali㉿kali-blue)-[~/Downloads]
+└─$ wget -O /tmp/autopsy-4.17.0.zip https://github.com/sleuthkit/autopsy/releases/download/autopsy-4.17.0/autopsy-4.17.0.zip
+--2023-08-03 11:22:14--  https://github.com/sleuthkit/autopsy/releases/download/autopsy-4.17.0/autopsy-4.17.0.zip
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+...
+Saving to: ‘/tmp/autopsy-4.17.0.zip’
+
+/tmp/autopsy-4.17.0.zip                100%[=========================================================================>]   1.03G  9.10MB/s    in 1m 56s  
+
+2023-08-03 11:24:11 (9.04 MB/s) - ‘/tmp/autopsy-4.17.0.zip’ saved [1101460665/1101460665]
+                                                                                                                                                   
+┌──(kali㉿kali-blue)-[~/Downloads]
+└─$ unzip /tmp/autopsy-4.17.0.zip -d /tmp/
+Archive:  /tmp/autopsy-4.17.0.zip
+...
+  inflating: /tmp/autopsy-4.17.0/unix_setup.sh  
+
+┌──(kali㉿kali-blue)-[~/Downloads]
+└─$ cd /tmp
+```
+
+### Configure autopsy
+
+```text
+┌──(kali㉿kali-blue)-[/tmp]
+└─$ cd autopsy-4.17.0 
+
+┌──(kali㉿kali-blue)-[/tmp/autopsy-4.17.0]
+└─$ chmod +x unix_setup.sh
+                                                                                                                                            
+┌──(kali㉿kali-blue)-[/tmp/autopsy-4.17.0]
+└─$ ./unix_setup.sh           
+---------------------------------------------
+Checking prerequisites and preparing Autopsy:
+---------------------------------------------
+Checking for PhotoRec...found in /usr/bin
+Checking for Java...ERROR: JAVA_HOME environment variable must be defined.
+
+┌──(kali㉿kali-blue)-[/tmp/autopsy-4.17.0]
+└─$ JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
+                                                                                    
+┌──(kali㉿kali-blue)-[/tmp/autopsy-4.17.0]
+└─$ echo $JAVA_HOME
+/usr/lib/jvm/java-17-openjdk-amd64
+
+┌──(kali㉿kali-blue)-[/tmp/autopsy-4.17.0]
+└─$ sudo update-alternatives --config javac
+There are 2 choices for the alternative javac (providing /usr/bin/javac).
+
+  Selection    Path                                          Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-17-openjdk-amd64/bin/javac   1711      auto mode
+  1            /usr/lib/jvm/java-11-openjdk-amd64/bin/javac   1111      manual mode
+  2            /usr/lib/jvm/java-17-openjdk-amd64/bin/javac   1711      manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 1
+update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in manual mode
+
+┌──(kali㉿kali-blue)-[/tmp/autopsy-4.17.0]
+└─$ JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
+                                                                                  
+┌──(kali㉿kali-blue)-[/tmp/autopsy-4.17.0]
+└─$ echo $JAVA_HOME 
+/usr/lib/jvm/java-11-openjdk-amd64                                                                                                                     
+┌──(kali㉿kali-blue)-[/tmp/autopsy-4.17.0]
+└─$ export JAVA_HOME
+
+┌──(kali㉿kali-blue)-[/tmp/autopsy-4.17.0]
+└─$ ./unix_setup.sh 
+---------------------------------------------
+Checking prerequisites and preparing Autopsy:
+---------------------------------------------
+Checking for PhotoRec...found in /usr/bin
+Checking for Java...found in /usr/lib/jvm/java-11-openjdk-amd64
+Checking for Sleuth Kit Java bindings...ERROR: sleuthkit-4.10.1.jar not found in /usr/share/java/ or /usr/local/share/java/.
+Please install the Sleuth Kit Java bindings file.
+See https://github.com/sleuthkit/sleuthkit/releases.
+
+┌──(kali㉿kali-blue)-[/tmp/autopsy-4.17.0]
+└─$ mv /usr/share/java/sleuthkit-4.10.2.jar /usr/share/java/sleuthkit-4.10.1.jar
+
+┌──(kali㉿kali-blue)-[/tmp/autopsy-4.17.0]
+└─$ ./unix_setup.sh                             
+---------------------------------------------
+Checking prerequisites and preparing Autopsy:
+---------------------------------------------
+Checking for PhotoRec...found in /usr/bin
+Checking for Java...found in /usr/lib/jvm/java-11-openjdk-amd64
+Checking for Sleuth Kit Java bindings...found in /usr/share/java
+Copying sleuthkit-4.10.1.jar into the Autopsy directory...done
+
+Autopsy is now configured. You can execute bin/autopsy to start it
+                                                                                                                                                     
+┌──(kali㉿kali-blue)-[/tmp/autopsy-4.17.0]
+└─$ bin/autopsy
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.netbeans.ProxyURLStreamHandlerFactory (file:/tmp/autopsy-4.17.0/platform/lib/boot.jar) to field java.net.URL.handler
+WARNING: Please consider reporting this to the maintainers of org.netbeans.ProxyURLStreamHandlerFactory
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+
+(java:4340): Gtk-WARNING **: 11:42:32.073: Unable to locate theme engine in module_path: "adwaita",              
+```
+
+### Move it
+
+```text 
+┌──(kali㉿kali-blue)-[/tmp/autopsy-4.17.0]
+└─$ sudo mv /tmp/autopsy-4.17.0 /opt/
+
+┌──(kali㉿kali-blue)-[/opt]
+└─$ ls
+autopsy-4.17.0  microsoft
+
+┌──(kali㉿kali-blue)-[/opt]
+└─$ sudo ln -s /opt/autopsy-4.17.0/bin/autopsy /usr/local/bin/autopsy
+
+┌──(kali㉿kali-blue)-[/opt]
+└─$ chmod +x /usr/local/bin/autopsy
+```
+     
+### Clean up
+
+```text 
+┌──(kali㉿kali-blue)-[/tmp]
+└─$ rm autopsy-4.17.0.zip sleuthkit-java_4.10.2-1_amd64.deb 
+```
 
 ## Installing autopsy 4.20
 
