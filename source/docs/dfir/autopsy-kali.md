@@ -1,6 +1,6 @@
 # Autopsy on Kali
 
-Autopsy is an open-source and powerful digital forensics platform. Several features within Autopsy have been developed by the Department of Homeland Security Science and Technology funding. 
+Autopsy is an open-source and powerful digital forensics platform. Several features within Autopsy have been developed by the Department of Homeland Security Science and Technology funding. If you want to get to work quickly, and do not insist on trying to get version 4 working in Linux, use the given defaults. Or set up [Autopsy 4 on a Windows VM](autopsy-windows.md).
 
 Both SIFT and Kali have 2.24 by default installed. And that was not good enough for some of the more current challenges. Installing 4.20 at the time of writing resulted in a dead GUI, to do with encapsulating Java runtime internals in Java 17. Looking forward, I see the same SEVERE UI error reported for Java 18 for several applications which are already using it. And using JDK 16 will not be trivial. The only release available in Debian 10 is OpenJDK 11. Debian 11 has OpenJDK 17. Both of these are releases with long-term support. 
 

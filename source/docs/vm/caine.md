@@ -44,7 +44,7 @@ sudo grub-install --boot-directory=/mnt/ubuntu/boot /dev/vda
 
 ## Usage
 
-Forensic tools is the first menu listed in CAINE. There are several categories in the menu, with several of the more popular tools used in open source forensics. Besides the categories, there are direct links to some of the more well-known tools, such as [Guymager](../dfir/guymager.md) and [Autopsy](../dfir/autopsy.md) (In CAINE 13 autopsy 2.24 is installed, to keep the ISO size down).
+Forensic tools is the first menu listed in CAINE. There are several categories in the menu, with several of the more popular tools used in open source forensics. Besides the categories, there are direct links to some of the more well-known tools, such as [Guymager](../dfir/guymager.md) and [Autopsy](../dfir/autopsy-kali.md) (In CAINE 13 autopsy 2.24 is installed, to keep the ISO size down).
 
 ## Resources
 
