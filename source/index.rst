@@ -361,7 +361,7 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Threat analysis
+   :caption: Threat intelligence
 
    docs/cti/README.md
    docs/cti/urlscan.md
@@ -370,6 +370,16 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/cti/talos.md
    docs/cti/on-line.md
    docs/cti/opencti.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Threat hunting
+
+   docs/hunting/README.md
+   docs/hunting/kibana.md
+   docs/hunting/elastic.md
 
 .. toctree::
    :glob:
