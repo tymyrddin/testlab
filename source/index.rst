@@ -379,7 +379,12 @@ The lodge was still and silent; she made no sound, and within the room, as witho
 
    docs/hunting/README.md
    docs/hunting/kibana.md
-   docs/hunting/elastic.md
+   docs/hunting/ai-engine.md
+   docs/hunting/apt-hunter.md
+   docs/hunting/automater.md
+   docs/hunting/deepbluecli.md
+   docs/hunting/phishing-catcher.md
+   docs/hunting/heimdal.md
 
 .. toctree::
    :glob:
@@ -426,7 +431,8 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    :caption: Security information and event management
 
    docs/siem/README.md
-   docs/siem/stack.md
+   docs/siem/siem-stack.md
+   docs/siem/elk-stack.md
    docs/siem/splunk.md
 
 .. toctree::
