@@ -2,8 +2,6 @@
 
 [Graylog](https://graylog.org/) provides answers to your team’s security, application, and IT infrastructure questions by enabling you to combine, enrich, correlate, query, and visualize all your log data in one place.
 
-Graylog can cover log ingestion, log analysis and visualisation requirements of the [SIEM stack](https://siem.tymyrddin.dev/docs/notes/siem#siem-stack-requirements)
-
 ## Resources
 
 * [Graylog - Log Ingestion Install](https://www.youtube.com/watch?v=63pNANfZHIk&list=PLB6hQ_WpB6U0WeroZAfssgRpxW8olnkqy&index=4)

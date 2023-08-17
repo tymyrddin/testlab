@@ -1,8 +1,8 @@
 # Introduction
 
-SIEM tools detect and block security threats with real-time analysis. They collect data from a range of sources, identify activity that deviates from the norm, and take action.
+[![SIEM stack](../../_static/images/siem-stack.png)](https://socfortress.medium.com/build-your-own-siem-stack-with-open-source-tools-series-39da0f2d412a)
 
-SIEM tools powered by machine learning are capable of learning over time what represents normal behaviour and what is a true deviation, improving their accuracy. This is especially important, given that technology, attack vectors and hacker sophistication evolve faster than ever.
+Most of these tools are Open Source, free, and together meet the requirements of [the SOCFortress SIEM stack](https://siem.tymyrddin.dev/docs/notes/siem#siem-stack-requirements):
 
 * [Wazuh](wazuh.md)
 * [Graylog](graylog.md)

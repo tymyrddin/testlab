@@ -2,8 +2,6 @@
 
 The [Wazuh Security Information and Event Management (SIEM) solution](https://wazuh.com/) is a centralized platform for aggregating and analyzing telemetry in real time for threat detection and compliance. Wazuh collects event data from various sources like endpoints, network devices, cloud workloads, and applications for broader security coverage.
 
-Wazuh can cover nearly every requirement of the [SIEM stack](https://siem.tymyrddin.dev/docs/notes/siem#siem-stack-requirements).
-
 ## Resources
 
 * [Wazuh installation elements](https://wazuh.com/install/)
