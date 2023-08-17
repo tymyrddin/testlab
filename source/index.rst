@@ -361,6 +361,28 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    :glob:
    :maxdepth: 1
    :includehidden:
+   :caption: Security information and event management
+
+   docs/siem/README.md
+   docs/siem/wazuh.md
+   docs/siem/graylog.md
+   docs/siem/grafana.md
+   docs/siem/opencti.md
+   docs/siem/misp.md
+   docs/siem/praeco.md
+   docs/siem/thehive.md
+   docs/siem/cortex.md
+   docs/siem/dfir-iris.md
+   docs/siem/velociraptor.md
+   docs/siem/shuffle.md
+   docs/siem/influxdb.md
+   docs/siem/elk-stack.md
+   docs/siem/splunk.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
    :caption: Threat intelligence
 
    docs/cti/README.md
@@ -369,7 +391,7 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/cti/phishtool.md
    docs/cti/talos.md
    docs/cti/on-line.md
-   docs/cti/opencti.md
+   docs/siem/opencti.md
 
 .. toctree::
    :glob:
@@ -397,7 +419,7 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/tvm/mitre.md
    docs/tvm/yara.md
    docs/tvm/openvas.md
-   docs/tvm/misp.md
+   docs/siem/misp.md
    docs/tvm/socprime.md
 
 .. toctree::
@@ -428,17 +450,6 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Security information and event management
-
-   docs/siem/README.md
-   docs/siem/siem-stack.md
-   docs/siem/elk-stack.md
-   docs/siem/splunk.md
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :includehidden:
    :caption: Digital forensics and incident response
 
    docs/dfir/README.md
@@ -454,8 +465,8 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/dfir/autopsy-windows.md
    docs/dfir/kape.md
    docs/dfir/volatility.md
-   docs/dfir/velociraptor.md
-   docs/dfir/thehive.md
+   docs/siem/velociraptor.md
+   docs/siem/thehive.md
    docs/dfir/ewf-tools.md
    docs/dfir/bmc-tools.md
    docs/dfir/gct.md

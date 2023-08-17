@@ -1,6 +1,6 @@
 # MISP
 
-MISP (Malware Information Sharing Platform) is an open-source threat information platform that facilitates the collection, storage and distribution of threat intelligence and Indicators of Compromise (IOCs) related to malware, cyberattacks, financial fraud or any intelligence within a community of trusted members. 
+[MISP](https://www.misp-project.org/) (Malware Information Sharing Platform) is an open-source threat information platform that facilitates the collection, storage and distribution of threat intelligence and Indicators of Compromise (IOCs) related to malware, cyberattacks, financial fraud or any intelligence within a community of trusted members. 
 
 ## Dashboard
 
@@ -110,6 +110,8 @@ The following tags can be considered a must-have to provide a well-defined event
 
 ## Resources
 
+* [MISP Install - 1 Million (+) Free IoCs](https://www.youtube.com/watch?v=Etr9vVC6WYQ&list=PLB6hQ_WpB6U0WeroZAfssgRpxW8olnkqy&index=12)
+* [Wazuh + MISP Automation - Automate Your SIEM Threat Intel](https://www.youtube.com/watch?v=I53HNekwu7w&list=PLB6hQ_WpB6U0WeroZAfssgRpxW8olnkqy&index=14)
 * [MISP Book](https://www.circl.lu/doc/misp/)
 * [MISP GitHub](https://github.com/MISP/)
 * [CIRCL MISP Training Module 1](https://www.youtube.com/watch?v=aM7czPsQyaI)

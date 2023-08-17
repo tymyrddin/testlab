@@ -1,6 +1,6 @@
 # Splunk
 
-Splunk is one of the leading SIEM solutions used to collect, analyse and correlate the network and machine logs in real-time.
+[Splunk](https://www.splunk.com/) is a SIEM solutions used to collect, analyse and correlate the network and machine logs in real-time.
 
 ## Components
 
