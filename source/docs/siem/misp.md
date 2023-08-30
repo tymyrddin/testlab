@@ -4,6 +4,8 @@
 
 ## Dashboard
 
+![MISP dash](../../_static/images/misp-dash.png)
+
 MISP is effectively useful for the following use cases:
 
 * Malware Reverse Engineering: Sharing of malware indicators to understand how different malware families function.

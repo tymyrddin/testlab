@@ -67,14 +67,14 @@ issue, stop the Nessus service, reset the configuration, restart Nessus and regi
 ## Host discovery
 
 | [![Type of scan](../../_static/images/host1.png)](https://docs.tenable.com/nessus/10_4/Content/CreateAScan.htm) |
-|:--:|
-| Performs a simple scan to discover live hosts and open ports. |
+|:---------------------------------------------------------------------------------------------------------------:|
+|                          Performs a simple scan to discover live hosts and open ports.                          |
 
 ### Default config
 
 | [![View default configuration](../../_static/images/host2.png)](https://docs.tenable.com/nessus/10_4/Content/ScanAndPolicyTemplates.htm#Discovery) |
-|:--:|
-| [Scan And Policy Templates: Discovery](https://docs.tenable.com/nessus/10_4/Content/ScanAndPolicyTemplates.htm#Discovery) |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------:|
+|             [Scan And Policy Templates: Discovery](https://docs.tenable.com/nessus/10_4/Content/ScanAndPolicyTemplates.htm#Discovery)              |
 
 ### Scan
 
@@ -85,15 +85,15 @@ scanned and the methods to be used in the discovery are set.
 
 ## Basic network scan
 
-| [![Type of scan](../../_static/images/network1.png)](https://docs.tenable.com/nessus/10_4/Content/CreateAScan.htm) |
-|:--:|
+|                           [![Type of scan](../../_static/images/network1.png)](https://docs.tenable.com/nessus/10_4/Content/CreateAScan.htm)                            |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Performs a full system scan that is suitable for any host. For example, this template can be used for <br> an internal vulnerability scan on an organisation's systems. |
 
 ### Default config
 
 | [![View default configuration](../../_static/images/network2.png)](https://docs.tenable.com/nessus/10_4/Content/ScanAndPolicyTemplates.htm#Vulnerabilities) |
-|:--:|
-| [Scan And Policy Templates: Vulnerabilities](https://docs.tenable.com/nessus/10_4/Content/ScanAndPolicyTemplates.htm#Vulnerabilities) |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|            [Scan And Policy Templates: Vulnerabilities](https://docs.tenable.com/nessus/10_4/Content/ScanAndPolicyTemplates.htm#Vulnerabilities)            |
 
 ### Example scan
 
@@ -105,15 +105,15 @@ scanned and the methods to be used in the discovery are set.
 ## Web application scan
 
 | [![Type of scan](../../_static/images/application1.png)](https://docs.tenable.com/nessus/10_4/Content/CreateAScan.htm) |
-|:--:|
-| Scan for published and unknown web vulnerabilities. |
+|:----------------------------------------------------------------------------------------------------------------------:|
+|                                  Scan for published and unknown web vulnerabilities.                                   |
 
 ### Default config
 
 
 | [![View default configuration](../../_static/images/application2.png)](https://docs.tenable.com/nessus/10_4/Content/ScanAndPolicyTemplates.htm#Vulnerabilities) |
-|:--:|
-| [Scan And Policy Templates: Vulnerabilities](https://docs.tenable.com/nessus/10_4/Content/ScanAndPolicyTemplates.htm#Vulnerabilities) |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|              [Scan And Policy Templates: Vulnerabilities](https://docs.tenable.com/nessus/10_4/Content/ScanAndPolicyTemplates.htm#Vulnerabilities)              |
 
 ### Settings
 
