@@ -2,7 +2,7 @@
 
 [![SIEM stack](../../_static/images/siem-stack.png)](https://socfortress.medium.com/build-your-own-siem-stack-with-open-source-tools-series-39da0f2d412a)
 
-Most of these tools are Open Source, free, and together meet the requirements of [the SIEM stack](https://siem.tymyrddin.dev/docs/notes/siem#siem-stack-requirements):
+Most of these tools are Open Source, free, and together meet these [requirements of a SIEM stack](https://siem.tymyrddin.dev/docs/notes/siem#siem-stack-requirements):
 
 * [Wazuh](wazuh.md)
 * [Graylog](graylog.md)
