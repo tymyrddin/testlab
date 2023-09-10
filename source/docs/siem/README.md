@@ -15,8 +15,9 @@ Most of these tools are Open Source, free, and together meet these [requirements
 * [Velociraptor](velociraptor.md)
 * [Shuffle](shuffle.md)
 * [InfluxDB](influxdb.md)
-
-----
-
 * [ELK stack](elk-stack.md)
 * [Splunk](splunk.md)
+
+## Stacks
+
+* [Wazuh SIEM stack with docker](wazuh-single-node.md) (the easiest)
