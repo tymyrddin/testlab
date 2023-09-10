@@ -107,11 +107,11 @@ docker compose up
 
 ![Up!](../../_static/images/wazuh-docker10.png)
 
-The JobSweeper by default will keep going. Pointing my browser to the server gives:
+When the JobSweeper starts, which by default will keep going, pointing browser to the IP of the server VM gives:
 
 ![Up!](../../_static/images/wazuh-docker11.png)
 
-Next up is a multi-node, with lrt's encrypt certificates, and agent enrollment.
+Next up is a multi-node, with let's encrypt certificates, and agent enrollment.
 
 ## Resources
 
