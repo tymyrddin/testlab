@@ -20,4 +20,6 @@ Most of these tools are Open Source, free, and together meet these [requirements
 
 ## Stacks
 
-* [Wazuh SIEM stack with docker](wazuh-single-node.md) (the easiest)
+* [Wazuh single-node deployment with docker](wazuh-single-node.md) (bare-bones)
+* [Wazuh multi-node deployment with docker](wazuh-multi-node.md)
+* [Building Wazuh images](wazuh-images.md)

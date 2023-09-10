@@ -1,0 +1,3 @@
+# Building Wazuh images
+
+To be done ...

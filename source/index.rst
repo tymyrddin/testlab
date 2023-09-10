@@ -379,6 +379,8 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/siem/elk-stack.md
    docs/siem/splunk.md
    docs/siem/wazuh-single-node.md
+   docs/siem/wazuh-multi-node.md
+   docs/siem/wazuh-images.md
 
 .. toctree::
    :glob:

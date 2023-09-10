@@ -1,4 +1,4 @@
-# Wazuh single-node stack with docker
+# Wazuh single-node deployment with docker
 
 The easiest stack uses dockers inside a single node in a VM, with Wazuh manager for ingesting logs, Elasticsearch to write logs and alerts to (storage backend), and Kibana as webUI to interact with the Elastick stack views, build a dashboard, and a user interface into all the alerts. Single-node, and locally, with self-signed certs.
 
@@ -29,7 +29,7 @@ systemctl start docker
 Check it works:
 
 ```text
-systemctl start docker
+systemctl status docker
 ```
 
 ![systemctl](../../_static/images/wazuh-docker3.png)
@@ -102,7 +102,7 @@ In the `wazuh-docker/single-node` directory:
 ## Deployment
 
 ```text
-docker compose up
+sudo docker compose up
 ```
 
 ![Up!](../../_static/images/wazuh-docker10.png)
@@ -111,7 +111,7 @@ When the JobSweeper starts, which by default will keep going, pointing browser t
 
 ![Up!](../../_static/images/wazuh-docker11.png)
 
-Next up is a multi-node, with let's encrypt certificates, and agent enrollment.
+[Next up](wazuh-images.md) is a multi-node, with let's encrypt certificates, and agent enrollment.
 
 ## Resources
 
