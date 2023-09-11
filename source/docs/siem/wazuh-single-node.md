@@ -111,7 +111,7 @@ When the JobSweeper starts, which by default will keep going, pointing browser t
 
 ![Up!](../../_static/images/wazuh-docker11.png)
 
-[Next up](wazuh-images.md) is a multi-node, with let's encrypt certificates, and agent enrollment.
+[Next up](wazuh-multi-node.md) is installing a multi-node and agent enrollment.
 
 ## Resources
 

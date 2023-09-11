@@ -1,6 +1,6 @@
 # Wazuh multi-node deployment with docker
 
-Multi-node Wazuh SIEM stack in a Qemu/KVM local VM, with let's encrypt certificates and agent enrollment. The nodes are two Wazuh manager nodes (one master and one worker), three Wazuh indexer nodes, and a Wazuh dashboard node.
+Multi-node Wazuh SIEM stack in a Qemu/KVM local VM, with agent enrollment. The nodes are two Wazuh manager nodes (one master and one worker), three Wazuh indexer nodes, and a Wazuh dashboard node.
 
 ## VM
 
@@ -264,10 +264,59 @@ When the JobSweeper starts, which by default will keep going, pointing browser t
 
 ![Up!](../../_static/images/wazuh-docker11.png)
 
-## Agent enrollment
+## Deploying a Wazuh agent on a Linux endpoint
 
-* Enrollment via agent configuration: Once the IP address of the manager has been set, the agent will be able to automatically request the key and import it. This is the recommended enrollment method.
-* Enrollment via manager API: The user requests the key from the manager API and then manually imports it to the agent.
+In this case, the VM host.
 
-To be continued ...
+### Enrollment via agent configuration
+
+Once the IP address of the manager has been set, the agent will be able to automatically request the key and import it. This is the recommended enrollment method.
+
+1. Click on the number of agents below ***Total Agents***. 
+2. Enter the required data: Operating system of device, OS version, Architecture of device, Wazuh server IP address, and optional settings, like name of agent and group of agents the device will belong to.
+3. A curl command is generated. Copy it to the CLI of the device to install and enroll the Wazuh agent.
+
+For example:
+
+```text
+nina@tardis:~$ curl -so wazuh-agent.deb https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.5.2-1_amd64.deb && sudo WAZUH_MANAGER='192.168.122.XXX' WAZUH_AGENT_GROUP='default' WAZUH_AGENT_NAME='Tardis' dpkg -i ./wazuh-agent.deb
+[sudo] password for nina: 
+Selecting previously unselected package wazuh-agent.
+(Reading database ... 583134 files and directories currently installed.)
+Preparing to unpack ./wazuh-agent.deb ...
+Unpacking wazuh-agent (4.5.2-1) ...
+Setting up wazuh-agent (4.5.2-1) ...
+```
+
+4. Start the agent
+
+```text
+nina@tardis:~$ sudo systemctl daemon-reload
+```
+
+```text
+nina@tardis:~$ sudo systemctl enable wazuh-agent
+```
+
+Response:
+
+```text
+Synchronizing state of wazuh-agent.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable wazuh-agent
+Created symlink /etc/systemd/system/multi-user.target.wants/wazuh-agent.service → /lib/systemd/system/wazuh-agent.service.
+```
+
+```text
+nina@tardis:~$ sudo systemctl start wazuh-agent
+```
+
+5. [Check the connection](https://documentation.wazuh.com/4.5/user-manual/agents/agent-connection.html).
+
+![Check agent was added](../../_static/images/wazuh-docker12.png)
+
+### Enrollment via manager API
+
+The user requests the key from the manager API and then manually imports it to the agent.
+
+
 
