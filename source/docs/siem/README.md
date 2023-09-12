@@ -10,7 +10,7 @@ Most of these tools are Open Source, free, and together meet these [requirements
 * [OpenCTI](opencti.md)
 * [MISP](misp.md)
 * [Praeco](praeco.md)
-* [TheHive](thehive.md)
+* [TheHIVE](thehive.md)
 * [Cortex](cortex.md)
 * [Velociraptor](velociraptor.md)
 * [Shuffle](shuffle.md)

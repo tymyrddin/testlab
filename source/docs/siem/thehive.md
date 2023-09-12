@@ -1,4 +1,4 @@
-# TheHive
+# TheHIVE
 
 [TheHive](https://thehive-project.org/) allows analysts from one organisation to work together on the same case simultaneously. This is due to the platform's rich feature set and integrations that support analyst workflows. The features include:
 
