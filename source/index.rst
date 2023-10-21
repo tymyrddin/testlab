@@ -462,7 +462,6 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/dfir/imaging.md
    docs/dfir/carving.md
    docs/dfir/guymager.md
-   docs/dfir/mvt.md
    docs/dfir/commercial.md
    docs/dfir/redline.md
    docs/dfir/autopsy-kali.md
@@ -476,12 +475,14 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/dfir/libbde.md
    docs/dfir/linux.md
    docs/dfir/gct.md
+   docs/dfir/mvt.md
    docs/dfir/apkeep.md
    docs/dfir/jadx.md
    docs/dfir/droidlysis.md
    docs/dfir/androguard.md
    docs/dfir/pirogue.md
    docs/dfir/pithus.md
+   docs/dfir/busybox.md
 
 .. toctree::
    :glob:
