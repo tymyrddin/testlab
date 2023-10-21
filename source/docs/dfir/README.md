@@ -36,9 +36,9 @@ The explosion of endpoints and escalation of attacks in general, has made DFIR a
 
 ## Mobile specific
 
-* [MVT (Mobile Verification Toolkit)](mvt.md)
+* [MVT (Mobile Verification Toolkit)](mvt.md) (local)
 * [apkeep](apkeep.md) (local)
-* [BusyBox](busybox.md)
+* [BusyBox](busybox.md) (local)
 * [jadx](jadx.md) (local)
 * [droidlysis](droidlysis.md) (local)
 * [androguard](androguard.md) (local)

@@ -150,6 +150,8 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/dis/ghidra.md
    docs/dis/r2.md
    docs/dis/ida.md
+   docs/dis/rizin.md
+   docs/dis/jeb.md
 
 .. toctree::
    :glob:

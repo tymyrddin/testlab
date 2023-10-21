@@ -13,3 +13,5 @@ Deadlisting and recognising the blocks of code help to build up the behaviour of
 * [Ghidra](ghidra.md)
 * [Radare2](r2.md)
 * [IDA](ida.md)
+* [Rizin/Cutter](rizin.md)
+* [JEB](jeb.md)
