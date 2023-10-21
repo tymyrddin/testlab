@@ -4,7 +4,9 @@ BusyBox is an open source project that provides a stripped down implementation o
 
 ## Installation
 
-1. [Download](https://www.appsapk.com/busybox-app/) and install busybox apk:
+On android:
+
+[Download](https://www.appsapk.com/busybox-app/) and install busybox apk:
 
 ```text
 adb -d install BusyBox.apk
@@ -12,14 +14,14 @@ adb -d install BusyBox.apk
 
 ## Usage example in Android forensics
 
-2. Check root access:
+1. Check root access:
 
 ```text
 su
 # ls /data
 ```
 
-3. Check the mounted partitions on the device:
+2. Check the mounted partitions on the device:
 
 ```text
 mount

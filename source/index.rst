@@ -477,12 +477,12 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/dfir/gct.md
    docs/dfir/mvt.md
    docs/dfir/apkeep.md
+   docs/dfir/busybox.md
    docs/dfir/jadx.md
    docs/dfir/droidlysis.md
    docs/dfir/androguard.md
    docs/dfir/pirogue.md
    docs/dfir/pithus.md
-   docs/dfir/busybox.md
 
 .. toctree::
    :glob:
