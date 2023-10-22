@@ -483,7 +483,7 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/dfir/jadx.md
    docs/dfir/droidlysis.md
    docs/dfir/androguard.md
-   docs/dfir/pirogue.md
+   docs/dfir/pts.md
    docs/dfir/pithus.md
 
 .. toctree::

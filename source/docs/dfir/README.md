@@ -42,7 +42,7 @@ The explosion of endpoints and escalation of attacks in general, has made DFIR a
 * [jadx](jadx.md) (local)
 * [droidlysis](droidlysis.md) (local)
 * [androguard](androguard.md) (local)
-* [PiRogue tool suite](pirogue.md) (3rd party)
+* [PiRogue tool suite](pts.md) (3rd party)
 * [Pithus](pithus.md)
 
 
