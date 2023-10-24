@@ -25,5 +25,6 @@ Simulating hacker-style attacks and/or doing forensics on mobile devices.
 * [androguard](androguard.md) (local)
 * [PiRogue tool suite](pts.md) (3rd party)
 * [Pithus](pithus.md)
+* [apktool](apktool.md)
 
 

@@ -337,6 +337,7 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/mobile/androguard.md
    docs/mobile/pts.md
    docs/mobile/pithus.md
+   docs/mobile/apktool.md
 
 .. toctree::
    :glob:
