@@ -319,7 +319,7 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Mobile devices
+   :caption: Mobile tools
 
    docs/mobile/README.md
    docs/mobile/mobsf.md
