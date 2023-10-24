@@ -9,8 +9,6 @@ The explosion of endpoints and escalation of attacks in general, has made DFIR a
 * [Carving tools](carving.md)
 * [Guymager](guymager.md)
 
-## Analysis (general)
-
 * [Commercial tools](commercial.md)
 * [RedLine](redline.md)
 * [Autopsy on Kali](autopsy-kali.md)
@@ -21,28 +19,14 @@ The explosion of endpoints and escalation of attacks in general, has made DFIR a
 * [TheHive project](../siem/thehive.md)
 * [Libewf and ewf-tools](ewf-tools.md)
 
-## Windows specific
-
 * [BMC-tools](bmc-tools.md)
 * [libbde-utils](libbde.md)
 
-## Linux specific
-
 * [Linux artifact analysis tools](linux.md)
-
-## Container specific
-
+* [BusyBox](busybox.md) (local)
 * [Google container tools](gct.md)
 
-## Mobile specific
 
-* [MVT (Mobile Verification Toolkit)](mvt.md) (local)
-* [apkeep](apkeep.md) (local)
-* [BusyBox](busybox.md) (local)
-* [jadx](jadx.md) (local)
-* [droidlysis](droidlysis.md) (local)
-* [androguard](androguard.md) (local)
-* [PiRogue tool suite](pts.md) (3rd party)
-* [Pithus](pithus.md)
+
 
 

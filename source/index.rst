@@ -329,6 +329,14 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/mobile/adb.md
    docs/mobile/frida.md
    docs/mobile/objection.md
+   docs/mobile/mvt.md
+   docs/mobile/apkeep.md
+   docs/dfir/busybox.md
+   docs/mobile/jadx.md
+   docs/mobile/droidlysis.md
+   docs/mobile/androguard.md
+   docs/mobile/pts.md
+   docs/mobile/pithus.md
 
 .. toctree::
    :glob:
@@ -477,14 +485,7 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/dfir/libbde.md
    docs/dfir/linux.md
    docs/dfir/gct.md
-   docs/dfir/mvt.md
-   docs/dfir/apkeep.md
    docs/dfir/busybox.md
-   docs/dfir/jadx.md
-   docs/dfir/droidlysis.md
-   docs/dfir/androguard.md
-   docs/dfir/pts.md
-   docs/dfir/pithus.md
 
 .. toctree::
    :glob:
@@ -493,6 +494,10 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    :caption: Phishing analysis
 
    docs/phishing/README.md
+   docs/phishing/header.md
+   docs/phishing/url.md
+   docs/phishing/ip.md
+   docs/phishing/rep.md
    docs/phishing/sandbox.md
    docs/phishing/phishtool.md
 
