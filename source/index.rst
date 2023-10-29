@@ -511,6 +511,23 @@ The lodge was still and silent; she made no sound, and within the room, as witho
    docs/malware/README.md
    docs/malware/remnux.md
 
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Active defence
+
+   docs/active/README.md
+   docs/active/thug.md
+   docs/active/tpot.md
+   docs/active/cowrie.md
+   docs/active/greedybear.md
+   docs/active/nova.md
+   docs/active/molehunt.md
+   docs/active/honeybadger.md
+   docs/active/mushmush.md
+   docs/active/owasp.md
+
 ----
 
 .. image:: _static/images/books.png
